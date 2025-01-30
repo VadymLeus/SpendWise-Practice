@@ -1,0 +1,226 @@
+.profileContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f9f4;
+}
+
+.profileForm {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  min-width: 340px;
+  width: 100%;
+  max-width: 400px; 
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  color: #2c6e49;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.subtitle {
+  color: #2c6e49;
+  margin: 20px 0 10px 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.subtitleDelete {
+  color: #d9534f;
+  margin: 20px 0 10px 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.infoText {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #c9dfc5;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.input:focus {
+  border-color: #2c6e49;
+  box-shadow: 0 0 5px rgba(44, 110, 73, 0.5);
+}
+
+.button {
+  width: 100%;
+  background-color: #2c6e49;
+  color: #ffffff;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #1f5135;
+}
+
+.buttonDelete {
+  background-color: #d9534f;
+}
+
+.buttonDelete:hover {
+  background-color: #c9302c;
+}
+
+.message {
+  margin-top: 10px;
+  color: #d9534f;
+  font-size: 14px;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .profileForm {
+    padding: 20px;
+  }
+
+  .input,
+  .button {
+    font-size: 14px;
+  }
+}
+
+.profileForm .button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.profileForm .button:hover {
+  background-color: #0056b3;
+}
+
+.profileForm .buttonDelete {
+  background-color: #d9534f;
+  color: #fff;
+}
+
+.profileForm .buttonDelete:hover {
+  background-color: #c9302c;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.modalTitle {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.modalButtons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.modal .button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal .button:hover {
+  background-color: #0056b3;
+}
+
+.modal .buttonDelete {
+  background-color: #d9534f;
+  color: #fff;
+}
+
+.modal .buttonDelete:hover {
+  background-color: #c9302c;
+}
+
+.backToHome {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #2c6e49;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.backToHome:hover {
+  color: #1f5135;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tabButton {
+  background-color: #f4f9f4;
+  border: 1px solid #c9dfc5;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin: 0 5px;
+  border-radius: 5px;
+}
+
+.tabButton:hover {
+  background-color: #e0f0e0;
+}
+
+.activeTab {
+  background-color: #2c6e49;
+  color: #ffffff;
+  border-color: #2c6e49;
+}
+
+.activeTab:hover {
+  background-color: #1f5135;
+}
